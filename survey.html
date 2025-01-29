@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <h1>BGR Institute Survey Form</h1>
+    <form action="survey" id="form">
+        <p>Please fill this form</p>
+        <div class="form">
+            <label for="name" id="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form">
+            <label for="email" id="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form">
+            <label for="age" id="age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+
+        <div class="form">
+            <label for="describe" id="describe">Which option best describe you?</label>
+            <select name="describe" id="describe">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="working">Working Class</option>
+                <option value="professional">Professional</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="text">Would you recommend BGR Institute to a friend?</label>
+            <label for="recommend1" id="recommend"><input type="radio" id="recommend">Yes
+            </label>
+            <label for="recommend2" id="recommend"><input type="radio" id="recommend">No
+            </label>
+            <label for="recommend3" id="recommend"> <input type="radio" id="recommend">Maybe
+
+            </label>
+        </div>
+        <div class="form">
+             <label>Courses available BGR Institute</label>
+             <small>(Choose the course(s) of you learnt)</small>
+             <label for="course1">
+                <input type="checkbox" name="web development">
+                Web Development</label>
+             <label for="course2">
+                <input type="checkbox" name="python">
+                Python</label>
+             <label for="course1"><input type="checkbox" name="data analysis">
+                Data Analysis</label>
+             <label for="course1"><input type="checkbox" name="cyber security">
+                Cyber Security</label>
+             <label for="course1"> <input type="checkbox" name="ui/ux">
+                Ui/Ux</label>
+             <label for="course1">
+                <input type="checkbox" name="graphics desihn">
+                Graphics Design</label>
+            
+        </div>
+
+        <div class="form">
+            <label for="comment">Any comments or suggestions:</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
